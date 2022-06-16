@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj": {}
+    "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj": {
+    "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj",
+        "projectUniqueName": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj",
         "projectName": "CarFactory-Domain",
-        "projectPath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj",
+        "projectPath": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj",
         "packagesPath": "C:\\Users\\Fang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\obj\\",
+        "outputPath": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

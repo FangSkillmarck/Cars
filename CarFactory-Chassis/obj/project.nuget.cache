@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dWUdbWjKQgBlXAgib9oG1mRjTFJa18aCgub5sxxt9ibhbOXOBNZW0hdvw/QZ2BSNWaCyAuzk0X1pSQ3u+LQXeQ==",
+  "dgSpecHash": "I+WHFegL6El89ARG36l7DAfypcM755bW5DUO6/SlNQagm3SzV5oQqvv8KF9BuqZP22+4efFftjuXTwcjsosozQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Chassis\\CarFactory-Chassis.csproj",
+  "projectFilePath": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Chassis\\CarFactory-Chassis.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fang\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\Fang\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",

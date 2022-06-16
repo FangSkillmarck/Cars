@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+e1pZRdoLSxwGa7luv+BWr8hI7J5+uUvoBQePLXE4OqWh977TIsDiY/IEplwzw9fZ6/SBe92Yc9x0OWMj5ScNA==",
+  "dgSpecHash": "kWllXKvn8tPVzO66MIeMysH0sDR6NaIEw6wqpwSRIb27937QoBVJiO+78SbJIG3WAAHGJQIk0218ILfEploPJg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory\\CarFactory.csproj",
+  "projectFilePath": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory\\CarFactory.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fang\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\Fang\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",
@@ -35,8 +35,7 @@
     "C:\\Users\\Fang\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.6.0\\system.security.cryptography.protecteddata.4.6.0.nupkg.sha512",
     "C:\\Users\\Fang\\.nuget\\packages\\system.security.permissions\\4.6.0\\system.security.permissions.4.6.0.nupkg.sha512",
     "C:\\Users\\Fang\\.nuget\\packages\\system.security.principal.windows\\4.6.0\\system.security.principal.windows.4.6.0.nupkg.sha512",
-    "C:\\Users\\Fang\\.nuget\\packages\\system.windows.extensions\\4.6.0\\system.windows.extensions.4.6.0.nupkg.sha512",
-    "C:\\Users\\Fang\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+    "C:\\Users\\Fang\\.nuget\\packages\\system.windows.extensions\\4.6.0\\system.windows.extensions.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

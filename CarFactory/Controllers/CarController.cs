@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Drawing;
+using System.Linq;
 using System.Threading.Tasks;
 using CarFactory_Domain;
 using CarFactory_Factory;
@@ -53,7 +54,7 @@ namespace CarFactory.Controllers
                     {
                         throw new ArgumentException("Must give an odd number of doors");
                     }
-                    PaintJob? paint = null;
+                    PaintJob paint = null;
                     var baseColor = Color.FromName(spec.Specification.Paint.BaseColor);
                     switch (spec.Specification.Paint.Type)
                     {
@@ -70,6 +71,7 @@ namespace CarFactory.Controllers
                             throw new ArgumentException(string.Format("Unknown paint type %", spec.Specification.Paint.Type));
                     }
                     var dashboardSpeakers = spec.Specification.FrontWindowSpeakers.Select(s => new CarSpecification.SpeakerSpecification { IsSubwoofer = s.IsSubwoofer });
+              
                     var doorSpeakers = new CarSpecification.SpeakerSpecification[0]; //TODO: Let people install door speakers
                     var wantedCar = new CarSpecification(paint, spec.Specification.Manufacturer, spec.Specification.NumberOfDoors, doorSpeakers, dashboardSpeakers);
                     wantedCars.Add(wantedCar);
@@ -95,8 +97,8 @@ namespace CarFactory.Controllers
         {
             public string Type { get; set; }
             public string BaseColor { get; set; }
-            public string? StripeColor { get; set; }
-            public string? DotColor { get; set; }
+            public string StripeColor { get; set; }
+            public string DotColor { get; set; }
         }
 
         public class CarSpecificationInputModel

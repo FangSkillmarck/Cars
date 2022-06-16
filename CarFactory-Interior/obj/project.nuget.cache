@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7cDQkn1m+2gMp8Ww1OCXPkaCC1RL8pZmi67lrDx5kgQmYa9C5/+B6Cj5a+dp3Q/YwvtmLm3/qhDiEki7L2d6AQ==",
+  "dgSpecHash": "SKnCKSVnrHTFejR/ChiZBqSSRrW2Iiqe8bLKxJcLixq+P4KYir09jJRlMsDtqaV0m1uXtkKZOPQA+v9t6HqdxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Interior\\CarFactory-Interior.csproj",
+  "projectFilePath": "C:\\Scripts\\csharp\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Interior\\CarFactory-Interior.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fang\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
     "C:\\Users\\Fang\\.nuget\\packages\\microsoft.csharp\\4.6.0\\microsoft.csharp.4.6.0.nupkg.sha512",

@@ -10,3 +10,15 @@ C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Uti
 C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\refint\CarFactory-Utilities.dll
 C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.pdb
 C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\ref\CarFactory-Utilities.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\bin\Debug\net5.0\CarFactory-Utilities.deps.json
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\bin\Debug\net5.0\CarFactory-Utilities.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\bin\Debug\net5.0\CarFactory-Utilities.pdb
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.csproj.AssemblyReference.cache
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.AssemblyInfoInputs.cache
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.AssemblyInfo.cs
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.csproj.CoreCompileInputs.cache
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\refint\CarFactory-Utilities.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\CarFactory-Utilities.pdb
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory.Utilities\obj\Debug\net5.0\ref\CarFactory-Utilities.dll
