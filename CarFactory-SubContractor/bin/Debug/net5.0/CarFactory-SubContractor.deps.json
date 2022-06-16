@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CarFactory-SubContractor/1.0.0": {
+        "dependencies": {
+          "CarFactory-Utilities": "1.0.0"
+        },
+        "runtime": {
+          "CarFactory-SubContractor.dll": {}
+        }
+      },
+      "CarFactory-Utilities/1.0.0": {
+        "runtime": {
+          "CarFactory-Utilities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarFactory-SubContractor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CarFactory-Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

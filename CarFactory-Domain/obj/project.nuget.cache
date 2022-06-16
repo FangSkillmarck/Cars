@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "iLHiE3+4wtYxSAaGntOe7oc5vFJ1lr2zDVBAUfVAs48TBYLxMbeGjYbA5a70VFCS02j0gomdZsSQyZ7yrXeZjg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Domain\\CarFactory-Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fang\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

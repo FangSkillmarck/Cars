@@ -1,0 +1,15 @@
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\bin\Debug\net5.0\CarFactory-SubContractor.deps.json
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\bin\Debug\net5.0\CarFactory-SubContractor.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\bin\Debug\net5.0\CarFactory-SubContractor.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\bin\Debug\net5.0\CarFactory-Utilities.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\bin\Debug\net5.0\CarFactory-Utilities.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.csproj.AssemblyReference.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.AssemblyInfoInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.AssemblyInfo.cs
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.csproj.CoreCompileInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.csproj.CopyComplete
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\refint\CarFactory-SubContractor.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\CarFactory-SubContractor.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-SubContractor\obj\Debug\net5.0\ref\CarFactory-SubContractor.dll

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8V6gpEvT1UeYJeOQmlb7pNUUEYJYzhEgS/v/lHAdaQoU7f0LozyIajFzt/2evaiL4z54fD2/cYasLAPVsA7JuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fang\\Downloads\\Planday_Backend_Code_Challenge\\CarFactory\\CarFactory-Storage\\CarFactory-Storage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fang\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Fang\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.113.2\\stub.system.data.sqlite.core.netstandard.1.0.113.2.nupkg.sha512",
+    "C:\\Users\\Fang\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.7\\system.data.sqlite.core.1.0.113.7.nupkg.sha512"
+  ],
+  "logs": []
+}

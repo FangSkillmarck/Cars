@@ -1,0 +1,17 @@
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Storage.deps.json
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Storage.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Storage.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Domain.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Utilities.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Domain.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\bin\Debug\net5.0\CarFactory-Utilities.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.csproj.AssemblyReference.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.AssemblyInfoInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.AssemblyInfo.cs
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.csproj.CoreCompileInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.csproj.CopyComplete
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\refint\CarFactory-Storage.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\CarFactory-Storage.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Storage\obj\Debug\net5.0\ref\CarFactory-Storage.dll

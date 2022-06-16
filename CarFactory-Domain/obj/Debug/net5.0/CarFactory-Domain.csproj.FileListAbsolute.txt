@@ -1,0 +1,12 @@
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\bin\Debug\net5.0\CarFactory-Domain.deps.json
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\bin\Debug\net5.0\CarFactory-Domain.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\bin\Debug\net5.0\CarFactory-Domain.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.csproj.AssemblyReference.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.AssemblyInfoInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.AssemblyInfo.cs
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.csproj.CoreCompileInputs.cache
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\refint\CarFactory-Domain.dll
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\CarFactory-Domain.pdb
+C:\Users\Fang\Downloads\Planday_Backend_Code_Challenge\CarFactory\CarFactory-Domain\obj\Debug\net5.0\ref\CarFactory-Domain.dll
