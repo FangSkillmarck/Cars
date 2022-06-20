@@ -74,3 +74,6 @@ C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\obj\Debug
 C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\obj\Debug\net5.0\CarFactory.pdb
 C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\obj\Debug\net5.0\CarFactory.genruntimeconfig.cache
 C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\obj\Debug\net5.0\ref\CarFactory.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\bin\Debug\net5.0\System.Net.Http.Formatting.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\bin\Debug\net5.0\System.Web.Http.dll
+C:\Scripts\csharp\Planday_Backend_Code_Challenge\CarFactory\CarFactory\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll

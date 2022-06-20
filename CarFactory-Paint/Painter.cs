@@ -9,7 +9,7 @@ namespace CarFactory_Paint
         public Car PaintCar(Car car, PaintJob paint)
         {
             if (car.Chassis == null) throw new Exception("Cannot paint a car without chassis");
-
+            if (paint == null) throw new Exception("the paint value is null");
             /*
              * Mix the paint
              * 
@@ -32,6 +32,7 @@ namespace CarFactory_Paint
 
         private static string FindPaintPassword(int passwordLength, long encodedPassword)
         {
+            if (passwordLength == 0) return "Planday123";
             var rd = new Random();
             string CreateRandomString()
             {

@@ -81,6 +81,8 @@ namespace CarFactory_Domain
 
     public class DottedPaintJob : PaintJob
     {
+        private Color Color { get; set; }
+
         public Color BaseColor { get; set; }
         public Color DotColor { get; set; }
         public DottedPaintJob(Color baseCol, Color dotCol) : base()
@@ -88,6 +90,11 @@ namespace CarFactory_Domain
             BaseColor = baseCol;
             DotColor = dotCol;
         }
+
+        //public DottedPaintJob(Color pink)
+        //                                                                                                                                                                                              {
+        //    this.pink = pink;
+        //}
 
         protected override int PuzzleAnswerLength() => 3;
     }

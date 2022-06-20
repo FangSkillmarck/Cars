@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 using CarFactory_Domain;
 using CarFactory_Factory;
@@ -46,36 +47,46 @@ namespace CarFactory.Controllers
         {
             //Check and transform specifications to domain objects
             var wantedCars = new List<CarSpecification>();
-            foreach (var spec in carsSpecs.Cars)
+            try
             {
-                for(var i = 1; i <= spec.Amount; i++)
+                foreach (var spec in carsSpecs.Cars)
                 {
-                    if(spec.Specification.NumberOfDoors % 2 == 0)
-                    {
-                        throw new ArgumentException("Must give an odd number of doors");
-                    }
-                    PaintJob paint = null;
-                    var baseColor = Color.FromName(spec.Specification.Paint.BaseColor);
-                    switch (spec.Specification.Paint.Type)
-                    {
-                        case "single":
-                            paint = new SingleColorPaintJob(baseColor);
-                            break;
-                        case "strie":
-                            paint = new StripedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.StripeColor));
-                            break;
-                        case "dot":
-                            paint = new DottedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.DotColor));
-                            break;
-                        default:
-                            throw new ArgumentException(string.Format("Unknown paint type %", spec.Specification.Paint.Type));
-                    }
+                for (var i = 1; i <= spec.Amount; i++)
+                {
+                   
+                        if (spec.Specification.NumberOfDoors % 2 == 0)
+                        {
+                             throw new BadHttpRequestException("The number of doors is 3 or 5");
+                        }
+                        PaintJob paint = null;
+                        var baseColor = Color.FromName(spec.Specification.Paint.BaseColor);
+
+                        switch (spec.Specification.Paint.Type.ToLower().Trim())
+                        {
+                            case "single":
+                                paint = new SingleColorPaintJob(baseColor);
+                                break;
+                            case "stripe":
+                                paint = new StripedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.StripeColor));
+                                break;
+                            case "dot":
+                                paint = new DottedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.DotColor));
+                                break;
+                            default:
+                                throw new BadHttpRequestException(string.Format("Unknown paint type, the paint type should be \"single\", \"stripe\" or \"dot\" ", spec.Specification.Paint.Type));
+                        }
                     var dashboardSpeakers = spec.Specification.FrontWindowSpeakers.Select(s => new CarSpecification.SpeakerSpecification { IsSubwoofer = s.IsSubwoofer });
-              
                     var doorSpeakers = new CarSpecification.SpeakerSpecification[0]; //TODO: Let people install door speakers
                     var wantedCar = new CarSpecification(paint, spec.Specification.Manufacturer, spec.Specification.NumberOfDoors, doorSpeakers, dashboardSpeakers);
                     wantedCars.Add(wantedCar);
-                }
+              
+                  }
+                 } 
+            }
+            catch (BadHttpRequestException ex)
+            {
+                Console.WriteLine("Exception Message: " + ex.Message);
+                throw;
             }
             return wantedCars;
         }
