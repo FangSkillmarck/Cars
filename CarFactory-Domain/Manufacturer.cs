@@ -9,4 +9,15 @@
         Plandrover = 5,
         Volksday = 6
     }
+
+    public class Manufacture
+    {
+        public Manufacturer Manufacturer { get; set; }
+        public Manufacture(Manufacturer manufacture)
+        {
+          Manufacturer = manufacture;
+        }
+    
+    }
+
 }

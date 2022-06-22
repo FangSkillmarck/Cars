@@ -52,14 +52,14 @@ namespace CarFactory.Controllers
                 foreach (var spec in carsSpecs.Cars)
                 {
                 for (var i = 1; i <= spec.Amount; i++)
-                {
-                   
+                    {
                         if (spec.Specification.NumberOfDoors % 2 == 0)
                         {
-                             throw new BadHttpRequestException("The number of doors is 3 or 5");
+                            throw new BadHttpRequestException("The number of doors is 3 or 5");
                         }
                         PaintJob paint = null;
-                        var baseColor = Color.FromName(spec.Specification.Paint.BaseColor);
+                        var baseColorInput = spec.Specification.Paint.BaseColor.Trim();
+                        var baseColor = ParseColor(baseColorInput);
 
                         switch (spec.Specification.Paint.Type.ToLower().Trim())
                         {
@@ -67,21 +67,22 @@ namespace CarFactory.Controllers
                                 paint = new SingleColorPaintJob(baseColor);
                                 break;
                             case "stripe":
-                                paint = new StripedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.StripeColor));
+                                paint = new StripedPaintJob(baseColor, ParseColor(spec.Specification.Paint.StripeColor));
                                 break;
                             case "dot":
-                                paint = new DottedPaintJob(baseColor, Color.FromName(spec.Specification.Paint.DotColor));
+                                paint = new DottedPaintJob(baseColor, ParseColor(spec.Specification.Paint.DotColor));
                                 break;
                             default:
                                 throw new BadHttpRequestException(string.Format("Unknown paint type, the paint type should be \"single\", \"stripe\" or \"dot\" ", spec.Specification.Paint.Type));
                         }
-                    var dashboardSpeakers = spec.Specification.FrontWindowSpeakers.Select(s => new CarSpecification.SpeakerSpecification { IsSubwoofer = s.IsSubwoofer });
-                    var doorSpeakers = new CarSpecification.SpeakerSpecification[0]; //TODO: Let people install door speakers
-                    var wantedCar = new CarSpecification(paint, spec.Specification.Manufacturer, spec.Specification.NumberOfDoors, doorSpeakers, dashboardSpeakers);
-                    wantedCars.Add(wantedCar);
-              
-                  }
-                 } 
+                        Manufacturer manufacturer = spec.Specification.Manufacturer;
+                        var dashboardSpeakers = spec.Specification.FrontWindowSpeakers.Select(s => new CarSpecification.SpeakerSpecification { IsSubwoofer = s.IsSubwoofer });
+                        var doorSpeakers = new CarSpecification.SpeakerSpecification[0]; //TODO: Let people install door speakers
+                        var wantedCar = new CarSpecification(paint, manufacturer, spec.Specification.NumberOfDoors, doorSpeakers, dashboardSpeakers);
+                        wantedCars.Add(wantedCar);
+
+                    }
+                } 
             }
             catch (BadHttpRequestException ex)
             {
@@ -89,6 +90,18 @@ namespace CarFactory.Controllers
                 throw;
             }
             return wantedCars;
+        }
+
+        //Parseing color input and make the first letter in colors to uppercase, 
+        public static Color ParseColor(string colorInput)
+        {
+            if (String.IsNullOrEmpty(colorInput))
+            {
+                throw new BadHttpRequestException("The value of the color is needed");
+            }
+            colorInput = colorInput.First().ToString().ToUpper() + colorInput.Substring(1);
+            var baseColor = Color.FromName(colorInput);
+            return baseColor;
         }
 
         public class BuildCarInputModel

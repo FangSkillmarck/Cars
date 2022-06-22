@@ -1,14 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using CarFactory.Controllers;
-using CarFactory_Factory;
-using System;
-using Xunit;
 using CarFactory_Domain;
 using CarFactory_Domain.Engine;
 using CarFactory_Paint;
 using FluentAssertions;
 using System.Drawing;
 using static CarFactory.Controllers.CarController;
+using CarFactory.Controllers;
 
 //To test Carcontroller's POST method , Post Json body are:
 //        {
@@ -21,7 +18,7 @@ using static CarFactory.Controllers.CarController;
 //          "type": "dot",
 //          "baseColor": "red",
 //          "stripeColor": null,
-//          "dotColor": "null"
+//          "dotColor": "pink"
 //        },
 //        "manufacturer": "Planborghini",
 //        "frontWindowSpeakers": [
@@ -40,44 +37,61 @@ namespace UnitTests
     [TestClass]
     public class CarsSpecsBrandIsPlanborgini
     {
+        //Arange, CarsSpecsBrand_Planborgini
+        public static CarPaintSpecificationInputModel spec = new CarPaintSpecificationInputModel
+        {
+            Type = "Stripe ",
+            BaseColor = "Blue",
+            StripeColor = "Orange",
+            DotColor = null
+        };
 
-        //        CarPaintSpecificationInputModel = new CarPaintSpecificationInputModel{
-        //            type = "Planborgini",
+        public static CarSpecificationInputModel inputModel = new CarSpecificationInputModel
+        {
+            NumberOfDoors = 3,
+            Paint = spec,
+            Manufacturer = Manufacturer.Planborghini
+        };
 
+        public static BuildCarInputModelItem carSpecItem = new BuildCarInputModelItem
+        {
+            Amount = 15,
+            Specification = inputModel
+        };
 
-        //    }
-
-        //    CarSpecificationInputModel = new CarSpecificationInputModel{
-
-        //}
-        //   CarSpecification = new CarSpecification{};
-
+        //public static BuildCarInputModel carsSepec = new BuildCarInputModel
+        //{
+        //    Cars = [{carsSepecItem}]
+        //};
 
         [TestMethod]
+        public void PaintType_Stripe_With_Capital_Letter_Should_Work_As_Small_lettter()
+        {
+            //var paintType = new CarPaintSpecificationInputModel().Type;
+            var paintType = spec.Type;
+            var painterJob = new StripedPaintJob(ParseColor(spec.BaseColor), ParseColor(spec.StripeColor));
+            var painter = new Painter();
+            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10), "Test"), new Interior(), new Wheel[4], Manufacturer.Plandrover, 5);
+            painter.PaintCar(car, painterJob);
+            var job = (StripedPaintJob)car.PaintJob;
+            job.StripeColor.Should().Be(Color.Orange);
+        }
+
         public void CarsSpecsBrand_Planborgini_Should_Have_Quantity_15()
         {
-            ////Arange, CarsSpecsBrand_Planborgini
-            //var 
+            CarsSpecsBrand_Planborgini_Should_Have_Quantity_15();
+        }
 
-            ////Act,  Thursday, utctime 7:00
-            //var result = FoodTimeMenuHelper.GetEarliestDeliveryTime(foodTimeCustomerConfig, now);
-            //var expected = DateTimeOffset.Parse("2021-03-25T07:00:00+00:00");
-
-            ////Assert
-            //Assert.Equal(result, expected);
+        [TestMethod]
+        public void CarsSpecsBrand_Planborgini_Should_Have_Quantity_15(CarController carController)
+        {
 
         }
 
         [TestMethod]
         public void CarsSpecsBrand_Planborgini_Should_Have_Three_Doors()
         {
-            var dottedPaint = new DottedPaintJob(Color.Pink, Color.Red);
-            var painter = new Painter();
-            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10),"Test"), new Interior(), new Wheel[4]);
-            painter.PaintCar(car, dottedPaint);
-            var job = (DottedPaintJob)car.PaintJob;
-            job.DotColor.Should().Be(Color.Pink);
-            job.AreInstructionsUnlocked().Should().BeTrue();
+         
         }
 
         [TestMethod]
@@ -88,7 +102,7 @@ namespace UnitTests
 
             //Act,
             var painter = new Painter();
-            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10), "Test"), new Interior(), new Wheel[4]);
+            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10), "Test"), new Interior(), new Wheel[4], Manufacturer.PlanfaRomeo, 5);
             painter.PaintCar(car, dottedPaint);
             var job = (DottedPaintJob)car.PaintJob;
 
@@ -98,24 +112,12 @@ namespace UnitTests
         [TestMethod]
         public void CarsSpecsBrand_Planborgini_Should_Have_Paint_With_Red_Dots()
         {
-            var singleColor = new SingleColorPaintJob(Color.Aqua);
-            var painter = new Painter();
-            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10), "Test"), new Interior(), new Wheel[4]);
-            painter.PaintCar(car, singleColor);
-            var job = (SingleColorPaintJob)car.PaintJob;
-            job.Color.Should().Be(Color.Red);
+          
         }
 
         [TestMethod]
         public void CarsSpecsBrand_Planborgini_Should_Have_Paint_With_No_Stripe()
         {
-            var singleColor = new SingleColorPaintJob(Color.Aqua);
-            var painter = new Painter();
-            var car = new Car(new Chassis("", true), new Engine(new EngineBlock(10), "Test"), new Interior(), new Wheel[4]);
-            painter.PaintCar(car, singleColor);
-            var job = (SingleColorPaintJob)car.PaintJob;
-            job.Color.Should().Be(Color.Aqua);
-            job.AreInstructionsUnlocked().Should().BeTrue();
         }
     }
 }

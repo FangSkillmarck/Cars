@@ -1,10 +1,5 @@
-﻿using Newtonsoft.Json.Converters;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace CarFactory_Domain
 {
@@ -15,13 +10,18 @@ namespace CarFactory_Domain
         public PaintJob PaintJob { get; set; }
         public Interior Interior { get; set; }
         public IEnumerable<Wheel> Wheels { get; set; }
+        public Manufacturer Manufacturer{ get; }
         public long CarLockSetting { get; private set; }
-        public Car(Chassis chassis, Engine.Engine engine, Interior interior, IEnumerable<Wheel> wheels)
+        public int NumberOfDoors { get; set; }
+        //public CarPaintSpecificationInputModel paintSpec
+        public Car(Chassis chassis, Engine.Engine engine, Interior interior, IEnumerable<Wheel> wheels, Manufacturer manufacturer, int numberOfDoors)
         {
-            Chassis = chassis;
-            Engine = engine;
-            Interior = interior;
-            Wheels = wheels;
+            Chassis = chassis ?? throw new ArgumentNullException(nameof(chassis));
+            Engine = engine ?? throw new ArgumentNullException(nameof(engine));
+            Interior = interior ?? throw new ArgumentNullException(nameof(interior));
+            Wheels = wheels ?? throw new ArgumentNullException(nameof(wheels));
+            Manufacturer = Manufacturer;
+            NumberOfDoors = numberOfDoors;
         }
 
         public void SetCarLockSettings(long setting)

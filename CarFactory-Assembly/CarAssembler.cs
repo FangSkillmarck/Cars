@@ -14,11 +14,11 @@ namespace CarFactory_Assembly
          * When working with this file, please do not 
          * modify existing logic in the constructor nor the CalibrateLocks method
          */
-        public Car AssembleCar(Chassis chassis, Engine engine, Interior interior, IEnumerable<Wheel> wheels)
+        public Car AssembleCar(Chassis chassis, Engine engine, Interior interior, IEnumerable<Wheel> wheels, Manufacturer manufacturer, int numberOfDoors)
         {
             if (chassis == null || engine == null || interior == null || wheels == null) throw new ArgumentNullException();
             if (wheels.Count() != 4) throw new Exception("Common cars must have 4 wheels");
-            var car = new Car(chassis, engine, interior, wheels);
+            var car = new Car(chassis, engine, interior, wheels, manufacturer, numberOfDoors);
             CalibrateLocks(car);
             return car;
         }

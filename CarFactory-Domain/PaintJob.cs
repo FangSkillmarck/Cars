@@ -91,11 +91,6 @@ namespace CarFactory_Domain
             DotColor = dotCol;
         }
 
-        //public DottedPaintJob(Color pink)
-        //                                                                                                                                                                                              {
-        //    this.pink = pink;
-        //}
-
         protected override int PuzzleAnswerLength() => 3;
     }
 }
