@@ -42,7 +42,9 @@ namespace CarFactory_Factory
                 var engine = _engineProvider.GetEngine(spec.Manufacturer);
                 var interior = _interiorProvider.GetInterior(spec);
                 var wheels = _wheelProvider.GetWheels();
-                var car = _carAssembler.AssembleCar(chassis, engine, interior, wheels);
+                var manufacturer = spec.Manufacturer;
+                var numberOfDoors = spec.NumberOfDoors;
+                var car = _carAssembler.AssembleCar(chassis, engine, interior, wheels, manufacturer, numberOfDoors);
                 var paintedCar = _painter.PaintCar(car, spec.PaintJob);
                 cars.Add(paintedCar);
             }

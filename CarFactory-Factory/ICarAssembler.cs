@@ -6,6 +6,6 @@ namespace CarFactory_Factory
 {
     public interface ICarAssembler
     {
-        Car AssembleCar(Chassis chassis, Engine engine, Interior interior, IEnumerable<Wheel> wheels);
+        Car AssembleCar(Chassis chassis, Engine engine, Interior interior, IEnumerable<Wheel> wheels, Manufacturer manufacturer, int numberOfDoors);
     }
 }

@@ -34,7 +34,7 @@ namespace CarFactory_Storage
                 specifications.Add(new EngineSpecification { CylinderCount = rdr.GetInt32(2), PropulsionType = (Propulsion)rdr.GetInt32(3), Name = rdr.GetString(4) });
             }
 
-            SlowWorker.FakeWorkingForMillis(350);
+   //         SlowWorker.FakeWorkingForMillis(350);
 
             return specifications.Single();
         }

@@ -32,7 +32,7 @@ namespace CarFactory_Paint
 
         private static string FindPaintPassword(int passwordLength, long encodedPassword)
         {
-            if (passwordLength == 0) return "Planday123";
+            if (passwordLength == 0) return "Plan";
             var rd = new Random();
             string CreateRandomString()
             {
