@@ -80,7 +80,6 @@ namespace CarFactory.Controllers
                         var doorSpeakers = new CarSpecification.SpeakerSpecification[0]; //TODO: Let people install door speakers
                         var wantedCar = new CarSpecification(paint, manufacturer, spec.Specification.NumberOfDoors, doorSpeakers, dashboardSpeakers);
                         wantedCars.Add(wantedCar);
-
                     }
                 } 
             }

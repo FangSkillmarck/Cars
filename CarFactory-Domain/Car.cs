@@ -20,7 +20,7 @@ namespace CarFactory_Domain
             Engine = engine ?? throw new ArgumentNullException(nameof(engine));
             Interior = interior ?? throw new ArgumentNullException(nameof(interior));
             Wheels = wheels ?? throw new ArgumentNullException(nameof(wheels));
-            Manufacturer = Manufacturer;
+            Manufacturer = manufacturer;
             NumberOfDoors = numberOfDoors;
         }
 
